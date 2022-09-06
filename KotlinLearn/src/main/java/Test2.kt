@@ -36,4 +36,9 @@ fun main() {
         println(it)
         20
     }.let(::println)
+
+    1 shl 2
+
+    val oddNumbers = generateSequence(1) { it + 2 } // `it` is the previous element
+    println(oddNumbers.take(444).toList())
 }
